@@ -1,9 +1,17 @@
+@font-face {
+  font-family: "League Gothic";
+  src: url("../font/LeagueGothic-Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   background-color: rgb(26, 25, 25);
   color: rgb(221, 221, 221);
 }
 
 #nav {
+  width: auto;
   height: 50px;
   border: 2px solid yellow;
   padding: 10px;
@@ -14,8 +22,8 @@ body {
 }
 
 #logo {
-  font-size: 25px;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 30px;
+  font-family: "League Gothic";
   color: rgb(221, 221, 221);
   text-decoration: none;
   margin-left: 10px;
