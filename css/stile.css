@@ -14,11 +14,12 @@ body {
   width: auto;
   height: 50px;
   border: 2px solid yellow;
-  padding: 10px;
+  padding: 10px 10px 20px 10px;
 }
 
 #menu {
   margin: 10px;
+  background: rgba(0, 0, 0, 0);
 }
 
 #logo {
@@ -29,7 +30,29 @@ body {
   margin-left: 10px;
 }
 
+#search-bar {
+  font-size: 20px;
+  margin-left: 300px;
+  padding: 5px 0px 5px 15px;
+  width: 30%;
+  border-radius: 15px 0px 0px 15px;
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+}
+
+#search-button {
+  padding: 0px 10px 10px 20px;
+  border-radius: 0px 10px 10px 0px;
+}
+
+#voice-button {
+  border-radius: 20px;
+  margin-left: 20px;
+  padding-bottom: 10px;
+}
+
 button {
-  background: rgba(0, 0, 0, 0);
+  background-color: rgb(59, 59, 59);
   border: 1px solid white;
+  color: white;
 }
