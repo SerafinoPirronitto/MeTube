@@ -10,6 +10,10 @@ body {
   color: rgb(221, 221, 221);
 }
 
+#search-bar-form {
+  display: inline;
+}
+
 #nav {
   width: auto;
   height: 50px;
@@ -20,6 +24,7 @@ body {
 #menu {
   margin: 10px;
   background: rgba(0, 0, 0, 0);
+  border: none;
 }
 
 #logo {
@@ -35,6 +40,7 @@ body {
   margin-left: 15%;
   padding: 5px 0px 5px 15px;
   width: 30%;
+  height: 40px;
   border-radius: 20px 0px 0px 20px;
   background-color: rgba(0, 0, 0, 0);
   color: white;
@@ -60,8 +66,16 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 #search-button {
+  position: relative;
+  right: 5px;
   padding: 0px 10px 10px 20px;
   border-radius: 0px 10px 10px 0px;
+}
+
+#search-button img {
+  position: relative;
+  top: 5px;
+  right: 3px;
 }
 
 #voice-button {
@@ -69,10 +83,15 @@ input[type="search"]::-webkit-search-cancel-button {
   margin-left: 20px;
   padding-bottom: 10px;
 }
+#voice-button svg {
+  position: relative;
+  top: 5px;
+}
 
 #settings-button {
   background-color: transparent;
   margin-left: 12%;
+  border: none;
 }
 
 #signin-button {

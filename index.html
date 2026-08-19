@@ -32,19 +32,21 @@
         MeTube
       </a>
 
-      <input
-        type="search"
-        name="search-bar"
-        id="search-bar"
-        placeholder="Search"
-      />
-      <button id="search-button">
-        <img
-          src="assets/search.svg"
-          style="height: auto; width: 25px"
-          alt="cerca"
+      <form method="get" id="search-bar-form">
+        <input
+          type="search"
+          name="search-bar"
+          id="search-bar"
+          placeholder="Search"
         />
-      </button>
+        <button id="search-button" type="submit">
+          <img
+            src="assets/search.svg"
+            style="height: auto; width: 25px"
+            alt="cerca"
+          />
+        </button>
+      </form>
 
       <button id="voice-button">
         <svg
@@ -89,5 +91,7 @@
         <span>Sign in</span>
       </button>
     </div>
+
+    <div style="height: 1000px"></div>
   </body>
 </html>
