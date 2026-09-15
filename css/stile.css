@@ -10,41 +10,82 @@ body {
   color: rgb(221, 221, 221);
 }
 
-#search-bar-form {
-  display: inline;
-}
+
 
 #nav {
-  width: auto;
-  height: 50px;
-  border: 2px solid yellow;
-  padding: 10px 10px 20px 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 35px;
+}
+
+#nav_sx
+{
+  height: 100%;
+  flex-grow: 1;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+}
+
+#nav_dx
+{
+  height: 100%;
+  flex-grow: 1;
+  display: flex;
+  justify-content: end;
+  align-items: center;
 }
 
 #menu {
-  margin: 10px;
+  height: 100%;
   background: rgba(0, 0, 0, 0);
   border: none;
 }
 
 #logo {
+  height: 100%;
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+}
+
+#logo  span{
   font-size: 30px;
   font-family: "League Gothic";
   color: rgb(221, 221, 221);
   text-decoration: none;
-  margin-left: 10px;
+}
+
+#search-bar-form {
+  height: 100%;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+#search-bar-with-button{
+  flex-grow: 1;
+  display: flex;
 }
 
 #search-bar {
+  flex-grow: 1;
   font-size: 20px;
-  margin-left: 15%;
   padding: 5px 0px 5px 15px;
-  width: 30%;
-  height: 40px;
   border-radius: 20px 0px 0px 20px;
   background-color: rgba(0, 0, 0, 0);
-  color: white;
   border: 1px solid white;
+  border-right: none;
+  color: white;
 }
 
 #search-bar:focus {
@@ -52,7 +93,7 @@ body {
   border: 2px solid rgb(32, 110, 178);
 }
 
-input[type="search"]::-webkit-search-cancel-button {
+#search-bar::-webkit-search-cancel-button {
   /* Rimuove la X blu nativa */
   appearance: none;
 
@@ -66,46 +107,43 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 #search-button {
-  position: relative;
-  right: 5px;
-  padding: 0px 10px 10px 20px;
-  border-radius: 0px 10px 10px 0px;
-}
-
-#search-button img {
-  position: relative;
-  top: 5px;
-  right: 3px;
+  height: 35px;;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 20px;
+  border-radius: 0px 9999px 9999px 0px;
 }
 
 #voice-button {
-  border-radius: 20px;
-  margin-left: 20px;
-  padding-bottom: 10px;
-}
-#voice-button svg {
-  position: relative;
-  top: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
 }
 
 #settings-button {
   background-color: transparent;
-  margin-left: 12%;
   border: none;
 }
 
 #signin-button {
-  margin-left: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
   padding: 5px 10px;
   background-color: transparent;
   color: rgb(30, 150, 225);
   border-color: gray;
-  border-radius: 25px;
+  border-radius: 9999px;
 }
 #signin-button span {
-  font-size: 15px;
-  vertical-align: super;
+  font-size: 16px;
 }
+
 
 button {
   background-color: rgb(59, 59, 59);
