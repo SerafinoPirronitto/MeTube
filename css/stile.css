@@ -150,3 +150,40 @@ button {
   border: 1px solid white;
   color: white;
 }
+
+.video{
+  /*DA MODIFICARE*/ width: calc(150px*16/9);
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 8px;
+  border: 2px solid red;
+  padding: 3px;
+}
+.video img{
+  height: 150px;
+  width: auto;
+}
+
+.video-info{
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  gap: 5px;
+}
+
+.title{
+  display: flex;
+  flex-direction: column;
+}
+
+.channel-text{
+  color: rgb(163, 163, 163);
+  font-size: 12px;
+}
+
+#content-display{
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+}
