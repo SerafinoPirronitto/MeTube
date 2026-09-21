@@ -74,3 +74,17 @@ align-content: center;
     text-decoration-line: none;
     border-radius: 17px;
 }
+
+.video-preview
+{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: black;
+}
+
+.video-preview img
+{
+    width: 200px;
+    height: auto;
+}
